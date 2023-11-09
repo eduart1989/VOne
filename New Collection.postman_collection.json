@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "c1e2d376-e909-4e8d-8b6f-4a161408496a",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5856165"
+	},
+	"item": [
+		{
+			"name": "Get vehicles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/vehicles",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"vehicles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Tenant",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/tenant",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tenant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get priceboards by tenantID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/tenant/1/priceboards",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tenant",
+						"1",
+						"priceboards"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post vehicles",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": \"10\",\n\t\"brand\": \"mini\",\n\t\"tenant_id\": \"2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/vehicles",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"vehicles"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

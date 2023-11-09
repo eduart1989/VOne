@@ -46,6 +46,10 @@ Lint the TypeScript files using ESLint: `yarn lint`
 - `docker-build`: Build a Docker image for the application.
 - `docker-run`: Run the Docker container on port 3000.
 
+## upload postman file
+
+New Collection.postman_collection.json
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
